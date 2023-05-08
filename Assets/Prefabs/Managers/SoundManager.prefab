@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1013683481872420492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1013683481872420490}
+  - component: {fileID: 1013683481872420488}
+  - component: {fileID: 1013683481872420491}
+  - component: {fileID: 1013683481872420489}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1013683481872420490
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013683481872420492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.7374386, y: 0.20807508, z: -0.0039505763}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1013683481872420488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013683481872420492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1a32861bb1bff4e897d139b8c4c846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio:
+    Guid:
+      Data1: 206462763
+      Data2: 1306469910
+      Data3: 1858348966
+      Data4: 106194655
+    Path: event:/UnderwaterAmbience
+  volumeValue: 1
+--- !u!114 &1013683481872420491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013683481872420492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cd500fdeb7942f4a8b5e573f2a7582d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SelectAudio:
+    Guid:
+      Data1: 1658238912
+      Data2: 1282253105
+      Data3: 943324093
+      Data4: 39370116
+    Path: event:/MainmenuMusic
+  volumeValue: 0.9
+--- !u!114 &1013683481872420489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1013683481872420492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b2e008cae975540a63ad36a49a052b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
