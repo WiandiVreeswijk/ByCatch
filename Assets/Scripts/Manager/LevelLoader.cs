@@ -5,17 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
-    private static bool level2Loaded, level3Loaded = false;
+    private static int currentLevel = 1;
+
     public void LoadLevel()
     {
-        if (!level2Loaded)
+        if (currentLevel == 1)
         {
             SceneManager.LoadScene("SecondLevel", LoadSceneMode.Single);
-            level2Loaded = true;
-        }else if (!level3Loaded)
+            currentLevel = 2;
+        }
+        else if (currentLevel == 2)
         {
             SceneManager.LoadScene("ThirdLevel", LoadSceneMode.Single);
-            level3Loaded = true;
+            currentLevel = 3;
         }
     }
 }

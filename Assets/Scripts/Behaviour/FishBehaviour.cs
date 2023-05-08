@@ -78,17 +78,19 @@ public class FishBehaviour : MonoBehaviour
             }
         }
     }
-   private void CheckWhereToFace()
+    private void CheckWhereToFace()
     {
         if (dirX > 0)
             facingRight = true;
         else if (dirX < 0)
             facingRight = false;
 
-        if (((facingRight) && (localScale.x < 0)) || ((!facingRight) && (localScale.x > 0)))
-            localScale.x *= -1;
-
-        transform.localScale = localScale;
+        Vector3 scale = transform.localScale;
+        if ((facingRight && scale.x < 0) || (!facingRight && scale.x > 0))
+        {
+            scale.x *= -1;
+            transform.localScale = scale;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
