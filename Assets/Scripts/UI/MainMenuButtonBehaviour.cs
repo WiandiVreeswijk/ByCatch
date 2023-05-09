@@ -7,13 +7,6 @@ public class MainMenuButtonBehaviour : MonoBehaviour
 {
     public GameObject mainMenu, instructionsMenu1, instructionsMenu2;
 
-    public Animator fadeBlackInAnimator;
-
-    public void LoadFirstLevel()
-    {
-        StartCoroutine(FadeOut());
-    }
-
     public void OpenInstructionsMenu1()
     {
         mainMenu.SetActive(false);
@@ -36,12 +29,5 @@ public class MainMenuButtonBehaviour : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-    }
-
-    private IEnumerator FadeOut()
-    {
-        fadeBlackInAnimator.Play("FadeToBlack");
-        yield return new WaitForSeconds(3f);
-        SceneManager.LoadScene("FirstLevel", LoadSceneMode.Single);
     }
 }
