@@ -44,5 +44,5 @@ Material:
     - Vector1_D775EAAC: 1.3
     m_Colors:
     - Color_234C1B0B: {r: 1, g: 0.9669811, b: 0.9669811, a: 0}
-    - Color_D12BF231: {r: 0.63584906, g: 0.8362634, b: 1, a: 0}
+    - Color_D12BF231: {r: 0, g: 0.50182587, b: 0.9150943, a: 0}
   m_BuildTextureStacks: []
