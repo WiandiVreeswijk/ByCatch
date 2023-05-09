@@ -40,9 +40,9 @@ Material:
     - Vector1_745B9376: 1.5
     - Vector1_8DA20226: 10
     - Vector1_AE30F744: 0.5
-    - Vector1_AF318A03: 1.4
-    - Vector1_D775EAAC: 1.41
+    - Vector1_AF318A03: 0.75
+    - Vector1_D775EAAC: 0.73
     m_Colors:
     - Color_234C1B0B: {r: 1, g: 0.9669811, b: 0.9669811, a: 0}
-    - Color_D12BF231: {r: 0.2772339, g: 0.48734483, b: 0.6603774, a: 0}
+    - Color_D12BF231: {r: 0.63584906, g: 0.8362634, b: 1, a: 0}
   m_BuildTextureStacks: []
