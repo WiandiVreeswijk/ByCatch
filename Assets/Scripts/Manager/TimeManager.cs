@@ -18,6 +18,7 @@ public class TimeManager : MonoBehaviour
 
     public LevelMusicManager lmm;
     public AmbientVolumeManager avm;
+    public LevelLoader levelLoader;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,7 +56,7 @@ public class TimeManager : MonoBehaviour
                 }
                 else
                 {
-                    SceneManager.LoadScene("Shop", LoadSceneMode.Single);
+                    levelLoader.LoadShop();
                     sceneLoaded = true;
                 }
             }

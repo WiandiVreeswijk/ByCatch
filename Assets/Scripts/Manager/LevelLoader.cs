@@ -10,6 +10,12 @@ public class LevelLoader : MonoBehaviour
     private static int currentLevel = 1;
     public Image blackScreen;
 
+    private const string FIRST_LEVEL_SCENE = "FirstLevel";
+    private const string SECOND_LEVEL_SCENE = "SecondLevel";
+    private const string THIRD_LEVEL_SCENE = "ThirdLevel";
+    private const string SHOP_SCENE = "Shop";
+
+
     private void Awake()
     {
         StartCoroutine(BlackScreenFade());
@@ -18,29 +24,52 @@ public class LevelLoader : MonoBehaviour
     private IEnumerator BlackScreenFade()
     {
         yield return new WaitForSeconds(1f);
-        blackScreen.DOFade(0f, 2f);
+        blackScreen.DOFade(0f, 2f).OnComplete(() =>
+        {
+            blackScreen.enabled = false;
+        });
     }
 
     public void StartGame()
     {
+        blackScreen.enabled = true;
         blackScreen.DOFade(1f, 2f).OnComplete(() =>
          {
-             SceneManager.LoadScene("FirstLevel", LoadSceneMode.Single);
+             SceneManager.LoadScene(FIRST_LEVEL_SCENE, LoadSceneMode.Single);
          });
+    }
+
+    public void LoadShop()
+    {
+        blackScreen.enabled = true;
+        blackScreen.DOFade(1f, 2f).OnComplete(() =>
+        {
+            SceneManager.LoadScene(SHOP_SCENE, LoadSceneMode.Single);
+        });
     }
 
     public void LoadLevel()
     {
-        if (currentLevel == 1)
+        blackScreen.enabled = true;
+        switch (currentLevel)
         {
-            SceneManager.LoadScene("SecondLevel", LoadSceneMode.Single);
-            currentLevel = 2;
-        }
-        else if (currentLevel == 2)
-        {
-            SceneManager.LoadScene("ThirdLevel", LoadSceneMode.Single);
-            currentLevel = 3;
+            case 1:
+                blackScreen.DOFade(1f, 2f).OnComplete(() =>
+                {
+                    SceneManager.LoadScene(SECOND_LEVEL_SCENE, LoadSceneMode.Single);
+                });
+                currentLevel = 2;
+                break;
+            case 2:
+                blackScreen.DOFade(1f, 2f).OnComplete(() =>
+                {
+                    SceneManager.LoadScene(THIRD_LEVEL_SCENE, LoadSceneMode.Single);
+                });
+                currentLevel = 3;
+                break;
+            default:
+                // Handle invalid level number
+                break;
         }
     }
-
 }
