@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.17976463, g: 0.038150515, b: 0.2004393, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1352,6 +1352,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1013683481872420488, guid: 1dd17de0094201c48a16c410237b8586, type: 3}
+      propertyPath: volumeValue
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1013683481872420490, guid: 1dd17de0094201c48a16c410237b8586, type: 3}
       propertyPath: m_RootOrder
       value: 18
@@ -1428,7 +1432,7 @@ MonoBehaviour:
       Data3: -558467964
       Data4: -1539478010
     Path: event:/LevelMusic
-  volumeValue: 1
+  volumeValue: 0
 --- !u!114 &389040031 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1013683481872420488, guid: 1dd17de0094201c48a16c410237b8586, type: 3}

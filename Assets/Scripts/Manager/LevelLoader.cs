@@ -17,9 +17,28 @@ public class LevelLoader : MonoBehaviour
     private const string GAME_COMPLETED = "GameCompleted";
     private const string LEADERBOARD = "Leaderboard";
 
+    private MenuMusicManager menuMusicManager;
+    private AmbientVolumeManager ambientVolumeManager;
+    private LevelMusicManager levelMusicManager;
+    
+
     private void Awake()
     {
         StartCoroutine(BlackScreenFade());
+    }
+
+    private void Start()
+    {
+        menuMusicManager = FindObjectOfType<MenuMusicManager>();
+        ambientVolumeManager = FindObjectOfType<AmbientVolumeManager>();
+        levelMusicManager = FindObjectOfType<LevelMusicManager>();
+
+        if(menuMusicManager != null)
+            menuMusicManager.FadeMenuMusicVolume(1, 3f);
+        if (ambientVolumeManager != null)
+            ambientVolumeManager.FadeAmbientVolume(1, 3f);
+        if (levelMusicManager != null)
+            levelMusicManager.FadeLevelMusicVolume(1, 3f);
     }
 
     private IEnumerator BlackScreenFade()
@@ -33,6 +52,8 @@ public class LevelLoader : MonoBehaviour
 
     public void StartGame()
     {
+        menuMusicManager.FadeMenuMusicVolume(0, 2f);
+        ambientVolumeManager.FadeAmbientVolume(0, 2f);
         blackScreen.enabled = true;
         blackScreen.DOFade(1f, 2f).OnComplete(() =>
          {
@@ -42,6 +63,8 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadShop()
     {
+        levelMusicManager.FadeLevelMusicVolume(0, 2f);
+        ambientVolumeManager.FadeAmbientVolume(0, 2f);
         blackScreen.enabled = true;
         blackScreen.DOFade(1f, 2f).OnComplete(() =>
         {
@@ -50,6 +73,8 @@ public class LevelLoader : MonoBehaviour
     }
     public void LoadGameCompleted()
     {
+        levelMusicManager.FadeLevelMusicVolume(0, 2f);
+        ambientVolumeManager.FadeAmbientVolume(0, 2f);
         blackScreen.enabled = true;
         blackScreen.DOFade(1f, 2f).OnComplete(() =>
         {
@@ -68,6 +93,8 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadLevel()
     {
+        menuMusicManager.FadeMenuMusicVolume(0, 2f);
+        ambientVolumeManager.FadeAmbientVolume(0, 2f);
         blackScreen.enabled = true;
         switch (currentLevel)
         {

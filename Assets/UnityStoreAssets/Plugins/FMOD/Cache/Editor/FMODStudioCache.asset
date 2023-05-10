@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../ByCatchFMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637977656400000000
+  lastModified: 638193565136895444
   FileSizes:
   - Name: Desktop
-    Value: 6997664
+    Value: 6997984
   Exists: 1
 --- !u!114 &-7779755361554804187
 MonoBehaviour:
@@ -110,7 +110,7 @@ MonoBehaviour:
   Path: ../ByCatchFMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637977656400000000
+  lastModified: 638193565136910324
   FileSizes:
   - Name: Desktop
     Value: 1444
@@ -224,7 +224,7 @@ MonoBehaviour:
   - {fileID: -9034127424865708609}
   StringsBanks:
   - {fileID: -4236417321156851836}
-  cacheTime: 637977656400000000
+  cacheTime: 638193565136910324
   cacheVersion: 131591
 --- !u!114 &72188939651087076
 MonoBehaviour:
@@ -333,7 +333,8 @@ MonoBehaviour:
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
-  Parameters: []
+  Parameters:
+  - {fileID: 6543755046205647106}
   MinDistance: 1
   MaxDistance: 20
   Length: 87421
@@ -391,6 +392,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 1000
+--- !u!114 &6543755046205647106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/ForestAmbience/AmbientVolume
+  m_EditorClassIdentifier: 
+  Name: AmbientVolume
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 1
+  ID:
+    data1: 340298303
+    data2: 3399307634
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &8816205705600258927
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1246,6 +1246,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1013683481872420488, guid: 1dd17de0094201c48a16c410237b8586, type: 3}
+      propertyPath: volumeValue
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013683481872420488, guid: 1dd17de0094201c48a16c410237b8586, type: 3}
       propertyPath: SelectAudio.Path
       value: event:/ForestAmbience
       objectReference: {fileID: 0}
@@ -1307,6 +1311,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1013683481872420490, guid: 1dd17de0094201c48a16c410237b8586, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1013683481872420491, guid: 1dd17de0094201c48a16c410237b8586, type: 3}
+      propertyPath: volumeValue
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1013683481872420492, guid: 1dd17de0094201c48a16c410237b8586, type: 3}
