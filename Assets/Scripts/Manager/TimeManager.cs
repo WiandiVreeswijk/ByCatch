@@ -52,7 +52,7 @@ public class TimeManager : MonoBehaviour
             {
                 if (SceneManager.GetActiveScene() == SceneManager.GetSceneByName("ThirdLevel"))
                 {
-                    SceneManager.LoadScene("GameCompleted", LoadSceneMode.Single);
+                    levelLoader.LoadGameCompleted();
                 }
                 else
                 {
