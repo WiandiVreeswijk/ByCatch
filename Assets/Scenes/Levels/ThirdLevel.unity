@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17976463, g: 0.038150515, b: 0.2004393, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -534,7 +534,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_sharedMaterial: {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -2013,7 +2014,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_sharedMaterial: {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -4706,7 +4708,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_sharedMaterial: {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -4847,7 +4850,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_sharedMaterial: {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -5122,7 +5126,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_sharedMaterial: {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:

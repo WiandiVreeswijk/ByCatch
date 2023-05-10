@@ -295,7 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7372549, g: 0.7372549, b: 0.7372549, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -651,6 +651,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dea24b0ae40df704289771b73c50aea8, type: 3}
+--- !u!114 &326771833 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6635853372919250986, guid: dea24b0ae40df704289771b73c50aea8, type: 3}
+  m_PrefabInstance: {fileID: 326771832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1af605c5d427ddd4aa4589a0611a74b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &452472126
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,7 +724,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_sharedMaterial: {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -848,7 +860,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_sharedMaterial: {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -1151,9 +1164,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 80290309}
-        m_TargetAssemblyTypeName: GameCompletedButtonBehaviour, Assembly-CSharp
-        m_MethodName: OpenLeaderboard
+      - m_Target: {fileID: 326771833}
+        m_TargetAssemblyTypeName: LevelLoader, Assembly-CSharp
+        m_MethodName: LoadLeaderboard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1375,13 +1388,14 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8669485f37908e24a9d814c6300480f3, type: 2}
   m_sharedMaterial: {fileID: 3641801735536446507, guid: 8669485f37908e24a9d814c6300480f3, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: 3641801735536446507, guid: 8669485f37908e24a9d814c6300480f3, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283280724
-  m_fontColor: {r: 0.32877177, g: 0.6792453, b: 0.30373797, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1510,7 +1524,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_sharedMaterial: {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
@@ -1721,7 +1736,8 @@ MonoBehaviour:
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_sharedMaterial: {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
-  m_fontSharedMaterials: []
+  m_fontSharedMaterials:
+  - {fileID: -5745683709607387831, guid: a3ac589264d79964a8679d686ac7062b, type: 2}
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:

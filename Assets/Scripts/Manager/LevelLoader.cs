@@ -15,7 +15,7 @@ public class LevelLoader : MonoBehaviour
     private const string THIRD_LEVEL_SCENE = "ThirdLevel";
     private const string SHOP_SCENE = "Shop";
     private const string GAME_COMPLETED = "GameCompleted";
-
+    private const string LEADERBOARD = "Leaderboard";
 
     private void Awake()
     {
@@ -54,6 +54,15 @@ public class LevelLoader : MonoBehaviour
         blackScreen.DOFade(1f, 2f).OnComplete(() =>
         {
             SceneManager.LoadScene(GAME_COMPLETED, LoadSceneMode.Single);
+        });
+    }
+
+    public void LoadLeaderboard()
+    {
+        blackScreen.enabled = true;
+        blackScreen.DOFade(1f, 1f).OnComplete(() =>
+        {
+            SceneManager.LoadScene(LEADERBOARD, LoadSceneMode.Single);
         });
     }
 
