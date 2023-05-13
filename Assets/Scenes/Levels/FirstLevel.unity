@@ -2993,7 +2993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timerSlider: {fileID: 408815420}
   timerText: {fileID: 410201267}
-  gameTime: 5
+  gameTime: 45
   lmm: {fileID: 985419503}
   avm: {fileID: 985419504}
   levelLoader: {fileID: 980138316}
